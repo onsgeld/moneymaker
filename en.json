@@ -1,3 +1,9 @@
 {
-    "landing.description": ""
+    "landing.description": "",
+    "landing.order_button": "",
+    "about.header": "",
+    "about.description": "",
+    "about.properties.duration_per_player": "",
+    "reviews.header": "",
+    "reviews.quotes.mitchel": ""
 }
