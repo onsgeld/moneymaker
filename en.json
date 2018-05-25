@@ -21,7 +21,7 @@
     "10reasons.items.see_bubble": "See credit bubbles arise with your own eyes",
     "10reasons.items.see_credit_effect": "See how credit influences the economy",
     "10reasons.items.crush_enemy_influence_people": "Crush your competition by making the inhabitants dance to your tune",
-    "10reasons.items.negotiate_friends": "Set up your friends in a negotation",
+    "10reasons.items.negotiate_friends": "Rip-off your friends in a negotation",
     "game_contents.header": "Game contents",
     "cards": "Cards",
     "in_the_media.header": "Known from...",
@@ -40,5 +40,6 @@
     "tab item in game contents section": {
         "board": "Board"
     },
-    "newsletter.description": "Subscribe to the newsletter to follow the ins and outs of the game, and to stay updated about the progress of the production and its distribution."
+    "newsletter.description": "Subscribe to the newsletter to follow the ins and outs of the game, and to stay updated about the progress of the production and its distribution.",
+    "buy_button": "Buy now"
 }
