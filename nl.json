@@ -2,7 +2,7 @@
     "landing.description": "Het spel waar JIJ de bank bent! Schep krediet, gebruik het alsof het geld is, en stuur de economie! In de setting van een handelsstad in de Gouden Eeuw is het jouw taak om de uiterste grens van Fractioneel Bankieren op te zoeken.",
     "landing.order_button": "Pre-order ($1€)",
     "intro.header": "Heb jij altijd al... Bankier willen zijn? Geld willen uitlenen? Essentieel zijn voor een economie? Dit is je kans!",
-    "intro.description": "In Money Maker speel je een bank in de setting van een handelsstad in de Gouden Eeuw. Je einddoel is om de rijkste bank te worden... of om de enige overlevende te zijn. Je verdient geld door krediet te verschaffen aan bedrijven, families en andere potentieel lucratieve actoren.\n\nZal jouw investering de economie doen groeien? Of begint de crisis bij jou omdat je meer hebt uitgeleend dan je in kas had?",
+    "intro.description1": "Money Maker truly is a wonderful game that easily demonstrates the effects of the monetary system on our economy and behaviours. It is both fun and serious. The game is set in the 17th century - the Golden Age of both the financial system and the Dutch economy. Not coincidentally was it the period that featured a government-sanctioned full-reserve bank. To give players additional information we also include a “Lore book”, an evolutionary tale of banking & finance.",
     "intro.properties.duration_per_player": "15min/speler",
     "reviews.header": "Recensies",
     "reviews.quotes.mitchel": "Doordat ik dit spel heb gespeeld weet ik nu ook wat meer over de bank. Ik zou het zeker nog wel een keer willen spelen!",
@@ -22,7 +22,7 @@
     "10reasons.items.see_credit_effect": "ZIE HOE KREDIET DE ECONOMIE BEÏNVLOEDT",
     "10reasons.items.crush_enemy_influence_people": "RICHT JE COMPETITIE TE GRONDE DOOR DE BESPELING VAN HET VOLK",
     "10reasons.items.negotiate_friends": "DRAAI JE VRIENDEN EEN POOT UIT IN EEN ONDERHANDELING",
-    "game_contents.header": "Spelinhoud",
+    "game_contents.header": "Spelcomponenten",
     "cards": "kaarten",
     "in_the_media.header": "Bekend van...",
     "about_us.header": "Over ons",
@@ -41,5 +41,18 @@
         "board": "bord"
     },
     "newsletter.description": "Schrijf je in voor de nieuwsbrief om op de hoogte te blijven van de productie en verkoop van de tweede editie!",
-    "buy_button": "Koop nu"
+    "buy_button": "Koop nu",
+    "game_contents.description": "Het spel bestaat uit:\n\nbankkluizen (om je winsten geheim te houden), geldmunten, kredietstukken, goederen & marktladders, bedrijfskaarten, kanskaarten, normale en speciale dobbelstenen, het spelbord, een handleiding en een verhalenboekje.\n\nDe spelerbanken hebben een gelimiteerde hoeveelheid geld in de kluis, maar een oneindige hoeveelheid krediet! Het spel komt met twee \"markten\" gevuld met houten blokjes; één voor consumptiegoederen (groen), en één voor productiegoederen (rood).",
+    "intro.description2": "Money Maker is een combinatie van Catan, Monopolie en Poker. In tegenstelling tot Monopolie is íedere speler echter de bank. (eindelijk!)\nHet doel van het spel is om de rijkste bankier te worden... of de minst arme! Zullen jouw investeringen de economie doen groeien? Of zal jij de volgende financiële crisis veroorzaken?",
+    "game_mechanics.header": "Hoe het spel werkt",
+    "game_mechanics.intro": "Iedere speler is een commerciële bank. Het is jouw taak om te eindigen als de rijkste bank van Amsterdam! Verdien zo veel mogelijk geld. Gelukkig heb je oneindig krediet om interessante bedrijven mee te kopen!",
+    "game_mechanics.description": "Het spelverloop is als volgt:",
+    "game_mechanics.outro": "But be careful! The more credit is introduced into the economy, the more inflation will rise, causing fluctuating prices. You might not get the return you were counting on...\n\nMaar wees voorzichtig! Hoe meer krediet de economie inkomt, des te erger wordt de inflatie en zullen de prijzen schommelen! Je plannen kunnen zomaar gedwarsboomd worden...",
+    "game_mechanics.step1": "Bied op tegen je vrienden om waardevolle bedrijven te verkrijgen.",
+    "game_mechanics.step2": "De hoogste bieder mag in het bedrijf investeren met diens krediet.",
+    "game_mechanics.step3": "Maak goederen met de bedrijven waar je in hebt geïnvesteerd.",
+    "game_mechanics.step4": "Verkoop de goederen op het juiste moment, verdien geld, en wordt rijk!",
+    "game_impressions.header": "Spelimpressies",
+    "game_impressions.description": "Het spelbord vertegenwoordigt de grachten van Amsterdam. De stad laat zien waar het bankkrediet heengaat. De grachten, van buiten naar binnen, zijn de verschillende kredietwaardigheidsniveau's. Iedere speler begint in de buitenste ring. Wanneer je succesvol je beloftes inlost ga je dichter naar het centrum en kan je meer risico nemen!",
+    "buying.header": "Haal Money Maker nu in huis!"
 }
