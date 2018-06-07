@@ -1,7 +1,7 @@
 {
     "landing.description": "Het spel waar JIJ de bank bent! Schep krediet, gebruik het alsof het geld is, en stuur de economie! In de setting van een handelsstad in de Gouden Eeuw is het jouw taak om de uiterste grens van Fractioneel Bankieren op te zoeken.",
     "landing.order_button": "Pre-order ($1€)",
-    "intro.header": "Heb jij altijd al... Bankier willen zijn? Geld willen uitlenen? Essentieel zijn voor een economie? Dit is je kans!",
+    "intro.header": "Over het spel",
     "intro.description1": "Money Maker truly is a wonderful game that easily demonstrates the effects of the monetary system on our economy and behaviours. It is both fun and serious. The game is set in the 17th century - the Golden Age of both the financial system and the Dutch economy. Not coincidentally was it the period that featured a government-sanctioned full-reserve bank. To give players additional information we also include a “Lore book”, an evolutionary tale of banking & finance.",
     "intro.properties.duration_per_player": "15min/speler",
     "reviews.header": "Recensies",
@@ -54,5 +54,6 @@
     "game_mechanics.step4": "Verkoop de goederen op het juiste moment, verdien geld, en wordt rijk!",
     "game_impressions.header": "Spelimpressies",
     "game_impressions.description": "Het spelbord vertegenwoordigt de grachten van Amsterdam. De stad laat zien waar het bankkrediet heengaat. De grachten, van buiten naar binnen, zijn de verschillende kredietwaardigheidsniveau's. Iedere speler begint in de buitenste ring. Wanneer je succesvol je beloftes inlost ga je dichter naar het centrum en kan je meer risico nemen!",
-    "buying.header": "Haal Money Maker nu in huis!"
+    "buying.header": "Haal Money Maker nu in huis!",
+    "landing.intro": "Heb jij altijd al... Bankier willen zijn? Geld willen uitlenen? Essentieel zijn voor een economie? Dit is je kans!"
 }
