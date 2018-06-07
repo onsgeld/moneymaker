@@ -1,7 +1,7 @@
 {
     "landing.description": "The game where YOU are the bank! Issue credit, use it as if it is money, steer the economy! In a trading town during the Golden Age it is your job to push Fractional Reserve Banking to its limits.",
     "landing.order_button": "Pre-order ($1€)",
-    "intro.header": "Have you always... wanted to be a banker? To extend credit? To be essential for an economy? This is your chance!",
+    "intro.header": "About the game",
     "intro.description1": "In Money Maker you play a bank in a Merchant town in the Golden Age. Your goal is to become the richest bank... or to be the sole survivor. Credit is your business! You earn money by extending credit to companies, families or whatever lucrative opportunity you see.\n\nWill your investment grow the economy? Or will you cause the next financial crisis because you extended more money than can be repaid?",
     "intro.properties.duration_per_player": "15min/player",
     "reviews.header": "References",
@@ -54,5 +54,6 @@
     "game_mechanics.step4": "Sell the goods to the markets, earn money, and hopefully make a profit!",
     "game_impressions.header": "Game impressions",
     "game_impressions.description": "The board represents the city of Amsterdam with its moats. The city visualizes the flow of credit through an economy as well as functions as a playful balance sheet. The moats from the outside in represent credit ratings. Every player starts in the outer ring. When banks successfully pay off their credit, they may upgrade to higher credit rating levels where they can take larger risks!",
-    "buying.header": "Get Money Maker now!"
+    "buying.header": "Get Money Maker now!",
+    "landing.intro": "Have you always wanted... to be a Banker? To lend out money? To be essential for an economy? This is your chance!"
 }
