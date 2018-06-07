@@ -55,5 +55,9 @@
     "game_impressions.header": "Game impressions",
     "game_impressions.description": "The board represents the city of Amsterdam with its moats. The city visualizes the flow of credit through an economy as well as functions as a playful balance sheet. The moats from the outside in represent credit ratings. Every player starts in the outer ring. When banks successfully pay off their credit, they may upgrade to higher credit rating levels where they can take larger risks!",
     "buying.header": "Get Money Maker now!",
-    "landing.intro": "Have you always wanted... to be a Banker? To lend out money? To be essential for an economy? This is your chance!"
+    "landing.intro": "Have you always wanted... to be a Banker? To lend out money? To be essential for an economy? This is your chance!",
+    "menus.secondary.business": "For companies",
+    "menus.secondary.about": "About us",
+    "menus.secondary.blog": "Blog",
+    "menus.secondary.contact": "Contact"
 }
