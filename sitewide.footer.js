@@ -8,11 +8,13 @@ for (const key of ["nl", "de", "en", "fr"]) {
 // we have to prepare them with translation tags
 function prepareMetaI18n() {
   var page_path = window.location.pathname.substring(1) || 'home';
+  var title_path = "meta.page-" + page_path + ".title";
+  var description_path = "meta.page-" + page_path + ".description";
   prepareMetaTags({
-    "head title":                           "meta.page-" + page_path + ".title",
-    "head meta[property='og:title']":       "meta.page-" + page_path + ".title",
-    "head meta[name='description']":        "meta.page-" + page_path + ".description",
-    "head meta[property='og:description']": "meta.page-" + page_path + ".description"
+    "head title":                           title_path,
+    "head meta[property='og:title']":       title_path,
+    "head meta[name='description']":        description_path,
+    "head meta[property='og:description']": description_path
   })
 }
 
