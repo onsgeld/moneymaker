@@ -49,21 +49,6 @@ function doI18n() {
       $this.html(translated);
     }
   });
-  // now go over every marked element that has a data-i18n-* attr,
-  // which specifies the attribute that should be replaced with
-  // the translated key
-  $("*[data-i18n-*]").each(function(){
-    var node = $(this);
-    $.each(this.attributes, function() {
-      // this.attributes is not a plain object, but an array
-      // of attribute nodes, which contain both the name and value
-      if(this.specified && this.name.startsWith("data-i18n-")) {
-        console.log(this.name, this.value);
-        var customAttrName = this.name.replace("data-i18n-", "");
-        node.attr(customAttrName, $.i18n(this.value));
-      }
-    });
-  });
 }
 
 function updateLangSelector() {
