@@ -38,14 +38,21 @@ function doI18n() {
     var $this = $(this);
     var key = $this.attr('data-i18n');
     var args = [key];
-    if ($this.data('args'))
+    if ($this.data('args')) {
       args = args.concat($this.data('args').split(','));
-    $this.html( $.i18n.apply(null, args) );
+    }
+    var translated = $.i18n.apply(null, args);
+    if (this.hasAttribute('data-i18n-target')) {
+      $this.attr($this.attr('data-i18n-target'), translated)
+    }
+    else {
+      $this.html(translated);
+    }
   });
   // now go over every marked element that has a data-i18n-* attr,
   // which specifies the attribute that should be replaced with
   // the translated key
-  $("*[data-i18n-]").each(function(){
+  $("*[data-i18n-*]").each(function(){
     var node = $(this);
     $.each(this.attributes, function() {
       // this.attributes is not a plain object, but an array
