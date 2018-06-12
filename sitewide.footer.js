@@ -17,6 +17,7 @@ function parseI18n(callback) {
   query_lang = getUrlParameter('lang');
   if (query_lang) {
     $.i18n().locale = query_lang;
+    callback.call();
   }
   else {
     $.getJSON('https://api.ipdata.co/', function(ipdata){
@@ -26,13 +27,18 @@ function parseI18n(callback) {
       else {
         $.i18n().locale = navigator.language;
       }
+      callback.call();
     });
   }
-  callback.call();
 };
 
 function doI18n() {
   updateLangSelector();
+  parseI18nTags();
+  setURLParameter('lang', $.i18n().locale);
+}
+
+function parseI18nTags() {
   $(".buy-button").attr("data-i18n", "buy_button");
   $("*[data-i18n]").each(function(){
     var $this = $(this);
@@ -93,7 +99,6 @@ jQuery(function($) {
   $('#lang-selector').change(function(){
     $.i18n().locale = $(this).val();
     doI18n();
-    setURLParameter('lang', $.i18n().locale);
   });
 });
 
