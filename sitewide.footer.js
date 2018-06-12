@@ -4,15 +4,31 @@ for (const key of ["nl", "de", "en", "fr"]) {
   langFiles[key] = "https://cdn.jsdelivr.net/gh/onsgeld/moneymaker@" + MM_I18N_RELEASE_TAG + "/" + key + ".json";
 }
 
+// since Webflow doesnt provide internationalised meta tags yet,
+// we have to prepare them with translation tags
 function prepareMetaI18n() {
-  var page_path = window.location.pathname.substring(1);
-  if (page_path == '') page_path = 'home';
-  $("head title").attr("data-i18n", "meta.page-" + page_path + ".title");
-  $("head meta[property='og:title']").attr("data-i18n-content", "meta.page-" + page_path + ".title");
-  $("head meta[name='description']").attr("data-i18n-content", "meta.page-" + page_path + ".description");
-  $("head meta[property='og:description']").attr("data-i18n-content", "meta.page-" + page_path + ".description");
+  var page_path = window.location.pathname.substring(1) || 'home';
+  prepareMetaTags({
+    "head title":                           "meta.page-" + page_path + ".title",
+    "head meta[property='og:title']":       "meta.page-" + page_path + ".title",
+    "head meta[name='description']":        "meta.page-" + page_path + ".description",
+    "head meta[property='og:description']": "meta.page-" + page_path + ".description"
+  })
 }
 
+function prepareMetaTag(metaSelector, i18nKey) {
+  $(metaSelector).attr({
+    "data-i18n": i18nKey
+  });
+}
+
+function prepareMetaTags(map) {
+  Object.keys(map).forEach(function(key,index) {
+    prepareMetaTag(key, map[key])
+  });
+}
+
+// determine the i18n lang from the context
 function parseI18n(callback) {
   query_lang = getUrlParameter('lang');
   if (query_lang) {
@@ -32,31 +48,52 @@ function parseI18n(callback) {
   }
 };
 
+// perform translation on all tagged nodes using the set locale
 function doI18n() {
   updateLangSelector();
   parseI18nTags();
   setURLParameter('lang', $.i18n().locale);
 }
 
+// go over all tagged nodes and parse translation
 function parseI18nTags() {
   $(".buy-button").attr("data-i18n", "buy_button");
   $("*[data-i18n]").each(function(){
     var $this = $(this);
     var key = $this.attr('data-i18n');
-    var args = [key];
+    var args = []
     if ($this.data('args')) {
-      args = args.concat($this.data('args').split(','));
+      args = $this.data('args').split(',');
     }
-    var translated = $.i18n.apply(null, args);
-    if (this.hasAttribute('data-i18n-target')) {
-      $this.attr($this.attr('data-i18n-target'), translated)
-    }
-    else {
-      $this.html(translated);
-    }
+    translateTag(this, key, $this.attr('data-i18n-target'), args);
   });
 }
 
+function isStringI18nKey(string) {
+  /^[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)*$/.test(string)
+}
+
+// translate a single node
+function translateTag(nodeSelector, i18nKey, targetAttr, args) {
+  var translated = $.i18n.apply(null, [i18nKey].concat(args || []));
+  if (translated !== i18nKey) {
+    var node = $(nodeSelector);
+    if (node.prop("tagName") == "META" && !targetAttr) {
+      targetAttr = 'content';
+    }
+    if (!targetAttr || targetAttr == 'html') {
+      node.html(translated);
+    }
+    else {
+      node.attr(targetAttr, translated);
+    }
+  }
+  else {
+    console.warn("content for key " + i18nKey + " was not translated");
+  }
+}
+
+// reflect a newly set locale in the language dropdown
 function updateLangSelector() {
   var charcode2 = $.i18n().locale.split('-')[0].toLowerCase();
   $('#lang-selector').val(charcode2);
