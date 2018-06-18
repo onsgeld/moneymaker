@@ -1,8 +1,8 @@
 {
-    "landing.description": "Le jeu où VOUS êtes la banque! Créez votre crédit, utilisez-le comme si c'était de l'argent, et dirigez ainsi l'économie! Dans le cadre d'une ville de commerce dans l'âge d'or, votre tâche est de trouver la limite ultime du fractionnement bancaire ",
+    "landing.description": "Avez-vous toujours voulu être banquier? et prêter de l'argent? Etre à l' issue de notre économie? Maintenant c'est votre chance! \nCréez votre crédit, utilisez-le comme si c'était de l'argent, et dirigez ainsi l'économie! Dans le cadre d'une ville de commerce dans l'âge d'or, votre tâche est de trouver la limite ultime du fractionnement bancaire ",
     "landing.order_button": "Pré-Commande ($1€)",
     "intro.header": "Avez-vous toujours voulu être banquier? et prêter de l'argent? Etre à l' issue de notre économie? Maintenant c'est votre chance!",
-    "intro.description1": "Dans Money Maker vous jouez une banque dans le cadre d'une ville de commerce dans l'âge d'or. Votre but est de devenir la banque la plus riche ... ou être le seul survivant. Vous gagnez de l'argent en fournissant des crédits aux entreprises, aux familles et à d'autres acteurs potentiellement lucratifs. Votre investissement fera-t-il croître l'économie? Ou, la crise commencera-t-elle par vous parce que vous aviez plus prêté que ce que vous n'aviez en caisse et en argent?",
+    "intro.description1": "Dans Money Maker vous jouez une banque dans le cadre d'une ville de commerce dans l'âge d'or. Votre but est de devenir la banque la plus riche ou être le seul survivant. Vous gagnez de l'argent en fournissant des crédits aux entreprises, aux familles et à d'autres acteurs potentiellement lucratifs. Votre investissement fera-t-il croître l'économie? Ou, la crise commencera-t-elle par vous parce que vous aviez plus prêté que ce que vous n'aviez en caisse et en argent?",
     "intro.properties.duration_per_player": "15min/joueur",
     "reviews.header": "Les Avis ",
     "reviews.quotes.mitchel": "Grâce à ce jeu, j'en sais maintenant beaucoup plus sur la banque et son fonctionnement. Je voudrais absolument jouer à nouveau!",
@@ -64,6 +64,6 @@
     "game_impressions.thumb_headers.overview": "tableau noir",
     "game_impressions.thumb_headers.setup": "aperçu du jeu",
     "game_impressions.thumb_headers.perspective": "Perspective du joueur",
-    "meta.page-home.title": "Money Maker - Play the Bank",
-    "meta.page-home.description": "Money Maker is the only board game where YOU create the money! Every player is a commercial bank. Use your infinite supply of credit to invest, produce goods, and earn money. Be careful not to create the next financial crisis!"
+    "meta.page-home.title": "Money- Maker - Le jeu où VOUS êtes la banque! ",
+    "meta.page-home.description": "Money Maker est le seul jeu où vous est le créateur de l'argent! Chaque joueur est une banque commerciale. Utilisez votre stock infini de crédit pour investir, produire des biens et gagner de l'argent. Mais faites attention à ne pas provoquer la prochaine crise financière!"
 }
