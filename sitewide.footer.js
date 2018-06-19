@@ -38,7 +38,7 @@ function parseI18n(callback) {
     callback.call();
   }
   else {
-    $.getJSON('https://api.ipdata.co/', function(ipdata){
+    $.getJSON('https://api.ipdata.co/?api-key=' + IPDATA_API_KEY, function(ipdata){
       if (ipdata.languages && ipdata.languages.length > 0) {
         $.i18n().locale = ISO6391.getCode(ipdata.languages[0].name);
       }
