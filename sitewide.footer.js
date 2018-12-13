@@ -1,6 +1,6 @@
 const langFiles = {};
 
-for (const key of ["nl", "de", "en", "fr"]) {
+for (const key of MM_I18N_LANGUAGES) {
   langFiles[key] = "https://cdn.jsdelivr.net/gh/onsgeld/moneymaker@" + MM_I18N_RELEASE_TAG + "/" + key + ".json";
 }
 
