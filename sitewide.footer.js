@@ -204,6 +204,7 @@ function initShopify() {
       });
 
       ShopifyBuy.UI.onReady(client).then(function (ui) {
+        jQuery('.shopify-buy__product').remove();
         jQuery('.shopify-button').each(function(){
           var button = jQuery(this);
           ui.createComponent('product', {
