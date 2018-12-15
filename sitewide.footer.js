@@ -262,9 +262,15 @@ function initShopify() {
                     "background-color": "#ffffff"
                   }
                 },
-                events: {
+                // doesnt seem to work
+                /*events: {
                   openCheckout: function (cart) {
                     window.location.href = "http://shop.moneymaker.games/cart";
+                  }
+                },*/
+                "DOMEvents": {
+                  'click input[name="checkout"]': function (evt, target) {
+                    alert("click checkout");
                   }
                 }
               },
