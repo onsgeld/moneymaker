@@ -262,16 +262,33 @@ function initShopify() {
                     "background-color": "#ffffff"
                   }
                 },
+                
+                // https://ecommerce.shopify.com/c/ecommerce-design/t/cart-widget-with-buy-button-go-to-full-checkout-and-not-popup-331134
+                "popup": false,
+                
                 // doesnt seem to work
                 /*events: {
                   openCheckout: function (cart) {
                     window.location.href = "http://shop.moneymaker.games/cart";
                   }
                 },*/
-                "DOMEvents": {
+                
+                // only fires after loading original popup
+                /*"DOMEvents": {
                   'click button.shopify-buy__btn--cart-checkout': function (evt, target) {
                     alert("click checkout");
                   }
+                }*/
+                
+                "templates": {
+                  footer: `{{^data.isEmpty}}
+                    <div class="{{data.classes.cart.footer}}" data-element="cart.footer">
+                      <p class="{{data.classes.cart.subtotalText}}" data-element="cart.total">{{data.text.total}}</p>
+                      <p class="{{data.classes.cart.subtotal}}" data-element="cart.subtotal">{{data.formattedTotal}}</p>
+                      <p class="{{data.classes.cart.notice}}" data-element="cart.notice">{{data.text.notice}}</p>
+                      <button class="{{data.classes.cart.button}}" type="button" data-element="cart.button">{{data.text.button}}</button>
+                    </div>
+                   {{/data.isEmpty}}`
                 }
               },
               "modalProduct": {
