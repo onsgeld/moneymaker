@@ -100,7 +100,7 @@ function translateTag(nodeSelector, i18nKey, targetAttr, args) {
 }
 
 function getI18nProductId() {
-  return MM_SHOP_I18N_PRODUCT_MAP[$.i18n().locale];
+  return MM_SHOP_I18N_PRODUCT_MAP[$.i18n().locale] || MM_SHOP_I18N_PRODUCT_MAP['en'];
 }
 
 // reflect a newly set locale in the language dropdown
