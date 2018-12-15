@@ -76,7 +76,7 @@ function parseI18nTags() {
 }
 
 function isStringI18nKey(string) {
-  /^[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)*$/.test(string)
+  return /^[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)*$/.test(string)
 }
 
 // translate a single node
@@ -134,18 +134,23 @@ function setURLParameter(key, value) {
   window.history.replaceState({}, '', `${location.pathname}?${params}`);
 }
 
+// reflect configured lang in DOM UI
+function updateUI() {
+  doI18n();
+  initShopify();
+}
+
 jQuery(function($) {
   $.i18n.debug = true;
   $.i18n().load(langFiles).done(function() {
     parseI18n(function(){
       prepareMetaI18n();
-      doI18n();
-      initShopify();
+      updateUI();
     });
   });
   $('#lang-selector').change(function(){
     $.i18n().locale = $(this).val();
-    doI18n();
+    updateUI()
   });
 });
 
