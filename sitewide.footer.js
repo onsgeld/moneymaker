@@ -50,11 +50,15 @@ function parseI18n(callback) {
   }
 };
 
+function getLocale2() {
+  return $.i18n().locale.split('-')[0].toLowerCase();
+}
+
 // perform translation on all tagged nodes using the set locale
 function doI18n() {
   updateLangSelector();
   parseI18nTags();
-  setURLParameter('lang', $.i18n().locale);
+  setURLParameter('lang', getLocale2());
 }
 
 // go over all tagged nodes and parse translation
@@ -101,7 +105,7 @@ function getI18nProductId() {
 
 // reflect a newly set locale in the language dropdown
 function updateLangSelector() {
-  var charcode2 = $.i18n().locale.split('-')[0].toLowerCase();
+  var charcode2 = getLocale2();
   $('#lang-selector').val(charcode2);
   if (charcode2 == 'en') {
     charcode2 = 'gb'; // or us
