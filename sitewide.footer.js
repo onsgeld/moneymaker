@@ -269,7 +269,7 @@ function initShopify() {
                   }
                 },*/
                 "DOMEvents": {
-                  'click input[name="checkout"]': function (evt, target) {
+                  'click button.shopify-buy__btn--cart-checkout': function (evt, target) {
                     alert("click checkout");
                   }
                 }
