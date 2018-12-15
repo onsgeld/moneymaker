@@ -274,11 +274,11 @@ function initShopify() {
                 },*/
                 
                 // only fires after loading original popup
-                /*"DOMEvents": {
+                "DOMEvents": {
                   'click button.shopify-buy__btn--cart-checkout': function (evt, target) {
-                    alert("click checkout");
+                    window.location.href = "http://shop.moneymaker.games/cart";
                   }
-                }*/
+                },
                 
                 "templates": {
                   footer: `{{^data.isEmpty}}
