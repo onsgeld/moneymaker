@@ -95,6 +95,10 @@ function translateTag(nodeSelector, i18nKey, targetAttr, args) {
   }
 }
 
+function getI18nProductId() {
+  return MM_SHOP_I18N_PRODUCT_MAP[$.i18n().locale];
+}
+
 // reflect a newly set locale in the language dropdown
 function updateLangSelector() {
   var charcode2 = $.i18n().locale.split('-')[0].toLowerCase();
@@ -185,8 +189,8 @@ function initShopify() {
 
     function ShopifyBuyInit() {
       var client = ShopifyBuy.buildClient({
-        domain: 'money-maker-cooperative.myshopify.com',
-        storefrontAccessToken: '2372271a10d3c068effa7c71ff07524b',
+        domain: MM_SHOP_DOMAIN,
+        storefrontAccessToken: MM_SHOP_CLIENT_TOKEN,
         appId: '6',
       });
 
@@ -194,7 +198,7 @@ function initShopify() {
         jQuery('.shopify-button').each(function(){
           var button = jQuery(this);
           ui.createComponent('product', {
-            id: [1356474450038],
+            id: [getI18nProductId()],
             node: this,
             moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
             options: {
