@@ -261,6 +261,11 @@ function initShopify() {
                   "footer": {
                     "background-color": "#ffffff"
                   }
+                },
+                events: {
+                  openCheckout: function (cart) {
+                    window.location.href = "http://shop.moneymaker.games/cart";
+                  }
                 }
               },
               "modalProduct": {
