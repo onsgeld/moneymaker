@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     $selectDpd = $('#select-parcelshop').selectize({
       valueField: 'parcelShopId',
       labelField: 'address',
-      searchField: 'parcelShopId',
+      //searchField: 'parcelShopId',
       sortField: 'distance',
       optgroupField: 'city',
       options: [],
@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
       loadThrottle: 1000,
       maxItems: 1,
       render: {
+        // see selectize.js-master/examples/optgroups.html
+        optgroup_header: function(data, escape) {
+            return '<div class="optgroup-header">' + 
+                escape(data.label) + 
+                //' <span class="scientific">' + escape(data.label_scientific) + '</span>' +
+            '</div>';
+        },
         option: function(item, escape) {
           return '<div class="moneymaker-dpd-item">' +
             '<span class="street dpd-field dpd-address-field">' + escape(item.street) + '</span> ' +
@@ -19,15 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
           '</div>';
         }
       },
-      // TODO: make lowest distance best score
-      /*score: function(search) {
-      	var score = this.getScoreFunction(search);
-        return function(item) {
-            //return score(item) * (1 + Math.min(item.distance  / 100, 1));
-          return parseInt(item.distance);
-        };
-      },*/
-      // TODO: address naar veld in object parsen zodat het gebruikt kan worden als label
       load: function(addressquery, callback) {
         if (!addressquery.length) return callback();
         $.ajax({
@@ -42,10 +40,15 @@ document.addEventListener('DOMContentLoaded', function() {
             callback();
           },
           success: function(res) {
-            callback(Object.values(res.shops).map(function(shop) {
+            var shops = Object.values(res.shops).map(function(shop) {
               shop.address = shop.street + " " + shop.houseNo + ", " + shop.zipCode + " " + shop.city;
               return shop;
-            }));
+            });
+            $.each(res, function(index, value) {
+                self.addOptionGroup(value.city, { label: value.city });
+            });
+            self.refreshOptions();
+            callback(shops);
           }
         });
       }
