@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
       maxItems: 1,
       render: {
         option: function(item, escape) {
-          return '<div>' +
+          return '<div class="moneymaker-dpd-item">' +
             '<span class="street">' + escape(item.street) + '</span> ' +
             '<span class="houseno">' + escape(item.houseNo) + '</span>, ' +
             '<span class="zip">' + escape(item.zipCode) + '</span> ' +
