@@ -52,6 +52,16 @@ body.template-cart {
   /*TODO*/
 }
 
+/* small tag for zipcode */
+#shopify-section-cart-template #select-parcelshop + .selectize-control .selectize-dropdown-content .moneymaker-dpd-item .dpd-address-field.zip {
+  padding: 3px 5px;
+  background: #ddd;
+  color: #666;
+  font-size: 10px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
 /* the closest DPD shop */
 #shopify-section-cart-template #select-parcelshop + .selectize-control .selectize-dropdown-content .moneymaker-dpd-item:first-child {
   background-color: #f7c13a; //mm logo yellow
