@@ -4,6 +4,39 @@ body.template-cart {
   margin: auto !important;
 }
 
+/* make the area flex so the dropdown component aligns right to the DPD icon */
+#moneymaker-parcelshop-area {
+  display: flex;
+}
+
+/* make the dropdown as wide as possible */
+#select-parcelshop-wrapper {
+  flex: 1;
+}
+
+/* define loading throbber */
+#shopify-section-cart-template #select-parcelshop + .selectize-control::before {
+  -moz-transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  content: ' ';
+  z-index: 2;
+  position: absolute;
+  display: block;
+  top: 12px;
+  right: 34px;
+  width: 16px;
+  height: 16px;
+  background: url(https://cdnjs.cloudflare.com/ajax/libs/galleriffic/2.0.1/css/loader.gif);
+  background-size: 16px 16px;
+  opacity: 0;
+}
+
+/* show loading throbber */
+#shopify-section-cart-template #select-parcelshop + .selectize-control.loading::before {
+  opacity: 0.4;
+}
+
 /* the dropdown item container */
 #shopify-section-cart-template #select-parcelshop + .selectize-control .selectize-dropdown-content {
   text-align: left;
@@ -22,4 +55,11 @@ body.template-cart {
 /* the closest DPD shop */
 #shopify-section-cart-template #select-parcelshop + .selectize-control .selectize-dropdown-content .moneymaker-dpd-item:first-child {
   background-color: #f7c13a; //mm logo yellow
+}
+
+/* DPD logo next to dropdown */
+#moneymaker-parcelshop-area .dpd-logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
 }
