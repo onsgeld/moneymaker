@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    $select-dpd = $('#select-parcelshop').selectize({
+    $selectDpd = $('#select-parcelshop').selectize({
       valueField: 'parcelShopId',
       labelField: 'address',
       searchField: 'parcelShopId',
