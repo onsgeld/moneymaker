@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
               shop.address = shop.street + " " + shop.houseNo + ", " + shop.zipCode + " " + shop.city;
               return shop;
             });
-            $.each(res, function(index, value) {
+            $.each(shops, function(index, value) {
               that.addOptionGroup(value.city, value.city);
             });
             that.refreshOptions();
