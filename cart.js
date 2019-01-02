@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     $selectDpd = $('#select-parcelshop').selectize({
       valueField: 'parcelShopId',
       labelField: 'address',
-      //searchField: 'parcelShopId',
+      searchField: 'parcelShopId',
       sortField: 'distance',
       optgroupField: 'city',
       options: [],
