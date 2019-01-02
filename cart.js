@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    $('#select-parcelshop').selectize({
+    $select-dpd = $('#select-parcelshop').selectize({
       valueField: 'parcelShopId',
-      //labelField: 'parcelShopId',
+      labelField: 'address',
       searchField: 'parcelShopId',
+      sortField: 'city',
       options: [],
       //create: false,
       loadThrottle: 1000,
@@ -40,7 +41,10 @@ document.addEventListener('DOMContentLoaded', function() {
             callback();
           },
           success: function(res) {
-            callback(Object.values(res.shops));
+            callback(Object.values(res.shops).map(function(shop) {
+              shop.address = shop.street + " " + shop.houseNo + ", " + shop.zipCode + " " + shop.city;
+              return shop;
+            });
           }
         });
       }
