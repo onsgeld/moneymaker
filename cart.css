@@ -59,7 +59,7 @@ body.template-cart {
 
 /* DPD logo next to dropdown */
 #moneymaker-parcelshop-area .dpd-logo {
-  width: 32px;
-  height: 32px;
+  /*width: 32px;*/
+  height: 36px;
   margin-right: 16px;
 }
