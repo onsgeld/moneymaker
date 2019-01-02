@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
       valueField: 'parcelShopId',
       labelField: 'address',
       searchField: 'parcelShopId',
-      sortField: 'city',
+      sortField: 'distance',
+      optgroupField: 'city',
       options: [],
       //create: false,
       loadThrottle: 1000,
@@ -19,13 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       },
       // TODO: make lowest distance best score
-      score: function(search) {
+      /*score: function(search) {
       	var score = this.getScoreFunction(search);
         return function(item) {
             //return score(item) * (1 + Math.min(item.distance  / 100, 1));
           return parseInt(item.distance);
         };
-      },
+      },*/
       // TODO: address naar veld in object parsen zodat het gebruikt kan worden als label
       load: function(addressquery, callback) {
         if (!addressquery.length) return callback();
