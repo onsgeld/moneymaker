@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
               return shop;
             });
             $.each(shops, function(index, value) {
-              that.addOptionGroup(value.city, {value: value.city});
+              that.addOptionGroup(value.city, {value: value.city, label: value.city, text: value.city});
             });
             that.refreshOptions();
             callback(shops);
