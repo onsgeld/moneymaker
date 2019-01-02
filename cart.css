@@ -1,25 +1,25 @@
-// make standalone cart page small to make DPD dropdown look better
+/* make standalone cart page small to make DPD dropdown look better */
 body.template-cart {
   max-width: 900px !important;
   margin: auto !important;
 }
 
-// the dropdown item container
+/* the dropdown item container */
 #shopify-section-cart-template #select-parcelshop + .selectize-control .selectize-dropdown-content {
   text-align: left;
 }
 
-// general DPD item
+/* general DPD item */
 #shopify-section-cart-template #select-parcelshop + .selectize-control .selectize-dropdown-content .moneymaker-dpd-item {
   padding: 10px;
 }
 
-// general DPD item address field
+/* general DPD item address field */
 #shopify-section-cart-template #select-parcelshop + .selectize-control .selectize-dropdown-content .moneymaker-dpd-item .dpd-address-field {
-  //TODO
+  /*TODO*/
 }
 
-// the closest DPD shop
+/* the closest DPD shop */
 #shopify-section-cart-template #select-parcelshop + .selectize-control .selectize-dropdown-content .moneymaker-dpd-item:first-child {
   background-color: #f7c13a; //mm logo yellow
 }
