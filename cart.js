@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
       maxItems: 1,
       render: {
         // see selectize.js-master/examples/optgroups.html
-        optgroup_header: function(data, escape) {
-            return '<div class="optgroup-header">' + 
-                escape(data.label) + 
-                //' <span class="scientific">' + escape(data.label_scientific) + '</span>' +
-            '</div>';
-        },
+//         optgroup_header: function(data, escape) {
+//             return '<div class="optgroup-header">' + 
+//                 escape(data.label) + 
+//                 //' <span class="scientific">' + escape(data.label_scientific) + '</span>' +
+//             '</div>';
+//         },
         option: function(item, escape) {
           return '<div class="moneymaker-dpd-item">' +
             '<span class="street dpd-field dpd-address-field">' + escape(item.street) + '</span> ' +
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
               return shop;
             });
             $.each(res, function(index, value) {
-              that.addOptionGroup(value.city, { label: value.city });
+              that.addOptionGroup(value.city, value.city);
             });
             that.refreshOptions();
             callback(shops);
