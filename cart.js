@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             callback(Object.values(res.shops).map(function(shop) {
               shop.address = shop.street + " " + shop.houseNo + ", " + shop.zipCode + " " + shop.city;
               return shop;
-            });
+            }));
           }
         });
       }
