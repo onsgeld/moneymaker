@@ -54,7 +54,7 @@ body.template-cart {
 
 /* small tag for zipcode */
 #shopify-section-cart-template #select-parcelshop + .selectize-control .selectize-dropdown-content .moneymaker-dpd-item .dpd-address-field.zip {
-  padding: 5px 2px;
+  padding: 0px 7px;
   background: #eee;
   border-radius: 50px;
   color: #666;
