@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       load: function(addressquery, callback) {
         if (!addressquery.length) return callback();
+        var that = this;
         $.ajax({
           url: 'https://dpd.moneymaker.games/',
           type: 'GET',
@@ -45,9 +46,9 @@ document.addEventListener('DOMContentLoaded', function() {
               return shop;
             });
             $.each(res, function(index, value) {
-                self.addOptionGroup(value.city, { label: value.city });
+              that.addOptionGroup(value.city, { label: value.city });
             });
-            self.refreshOptions();
+            that.refreshOptions();
             callback(shops);
           }
         });
