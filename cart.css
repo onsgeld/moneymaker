@@ -4,6 +4,13 @@ body.template-cart {
   margin: auto !important;
 }
 
+#moneymaker-dpd-notice {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba; 
+  padding: .75rem 1.25rem;
+}
+
 /* make the area flex so the dropdown component aligns right to the DPD icon */
 #moneymaker-parcelshop-area {
   display: flex;
