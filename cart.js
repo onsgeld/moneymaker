@@ -19,10 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
 //         },
         option: function(item, escape) {
           return '<div class="moneymaker-dpd-item">' +
+            '<span class="zip dpd-field dpd-address-field">' + escape(item.zipCode) + '</span> - ' + 
             '<span class="street dpd-field dpd-address-field">' + escape(item.street) + '</span> ' +
-            '<span class="houseno dpd-field dpd-address-field">' + escape(item.houseNo) + '</span>, ' +
-            '<span class="zip dpd-field dpd-address-field">' + escape(item.zipCode) + '</span> ' +
-            '<span class="city dpd-field dpd-address-field">' + escape(item.city) + '</span>' +
+            '<span class="houseno dpd-field dpd-address-field">' + escape(item.houseNo) + '</span>'
           '</div>';
         }
       },
