@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
 //             '</div>';
 //         },
         option: function(item, escape) {
-          return '<div class="moneymaker-dpd-item">' +
-            '<span class="zip dpd-field dpd-address-field">' + escape(item.zipCode) + '</span> - ' + 
+          return '<div class="moneymaker-dpd-item">' + 
             '<span class="street dpd-field dpd-address-field">' + escape(item.street) + '</span> ' +
-            '<span class="houseno dpd-field dpd-address-field">' + escape(item.houseNo) + '</span>'
+            '<span class="houseno dpd-field dpd-address-field">' + escape(item.houseNo) + '</span>' + 
+            '<span class="zip dpd-field dpd-address-field">' + escape(item.zipCode) + '</span>'
           '</div>';
         }
       },
