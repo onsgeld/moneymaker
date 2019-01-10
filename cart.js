@@ -41,8 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
           },
           success: function(res) {
             var shops = Object.values(res.shops).map(function(shop) {
+              // TODO: move these two to the backend
               shop.address = shop.street + " " + shop.houseNo + ", " + shop.zipCode + " " + shop.city;
-              shop.shopwedoId = 'parcelshop' + shop.parcelShopId;
+              shop.shopwedoId = 'parcelshop-' + shop.parcelShopId;
               return shop;
             });
             $.each(shops, function(index, value) {
