@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     $selectDpd = $('#select-parcelshop').selectize({
-      valueField: 'parcelShopId',
+      valueField: 'shopwedoId',
       labelField: 'address',
       searchField: 'parcelShopId',
       sortField: 'distance',
@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
           success: function(res) {
             var shops = Object.values(res.shops).map(function(shop) {
               shop.address = shop.street + " " + shop.houseNo + ", " + shop.zipCode + " " + shop.city;
+              shop.shopwedoId = 'parcelshop' + shop.parcelShopId;
               return shop;
             });
             $.each(shops, function(index, value) {
