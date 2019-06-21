@@ -1,7 +1,15 @@
 const langFiles = {};
 
+if (MM_DEVELOPMENT) {
+  langBaseUrl = 'https://cdn.jsdelivr.net/gh/onsgeld/moneymaker/'
+}
+
+else {
+  langBaseUrl = "https://cdn.jsdelivr.net/gh/onsgeld/moneymaker@" + MM_I18N_RELEASE_TAG + "/"
+}
+
 for (const key of MM_I18N_LANGUAGES) {
-  langFiles[key] = "https://cdn.jsdelivr.net/gh/onsgeld/moneymaker@" + MM_I18N_RELEASE_TAG + "/" + key + ".json";
+  langFiles[key] = langBaseUrl + key + ".json";
 }
 
 // since Webflow doesnt provide internationalised meta tags yet,
@@ -262,24 +270,24 @@ function initShopify() {
                     "background-color": "#ffffff"
                   }
                 },
-                
+
                 // https://ecommerce.shopify.com/c/ecommerce-design/t/cart-widget-with-buy-button-go-to-full-checkout-and-not-popup-331134
                 "popup": false,
-                
+
                 // doesnt seem to work
                 /*events: {
                   openCheckout: function (cart) {
                     window.location.href = "http://shop.moneymaker.games/cart";
                   }
                 },*/
-                
+
                 // only fires after loading original popup
                 "DOMEvents": {
                   'click button.shopify-buy__btn--cart-checkout': function (evt, target) {
                     window.location.href = "http://shop.moneymaker.games/cart";
                   }
                 },
-                
+
                 "templates": {
                   footer: `{{^data.isEmpty}}
                     <div class="{{data.classes.cart.footer}}" data-element="cart.footer">
