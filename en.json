@@ -1,8 +1,8 @@
 {
-    "landing.description": "Have you always wanted... to be a Banker? To lend out money? To be essential for an economy? This is your chance!\n\nIssue credit, use it as if it is money, steer the economy! In a trading town during the Golden Age it is your job to push Fractional Reserve Banking to its limits.",
-    "landing.order_button": "Order Now ($1€)",
+    "landing.description": "Money Maker is a fun board game about creating money, debt and credit set in 16th century Amsterdam, the Golden Age of the Netherlands. ",
+    "landing.order_button": "Buy Now ($1€)",
     "intro.header": "About the game",
-    "intro.description1": "Money Maker is a unique game full of wonder which shows how the financial system works and influences our behaviour. It is full of both fun and serious business. In Money Maker you play a bank in a Merchant town during the Golden Age. Your goal is to become the richest bank. Credit is your business! Invest in any lucrative opportunity you see. Will your investments grow the economy? Or will you cause the next financial crisis?",
+    "intro.description1": "Money Maker is a fun and serious game that demonstrates the effects of the money system on our economy and behaviours. The game is set in the 17th century - the Golden Age of both the financial system and the Dutch economy. ",
     "intro.properties.duration_per_player": "15min/player",
     "reviews.header": "References",
     "reviews.quotes.mitchel": "Because I played this game I now know more about the Bank. I definitely want to play it again!",
@@ -36,14 +36,14 @@
     "menus.primary.10reasons": "10 Reasons",
     "menus.primary.game_contents": "Game contents",
     "menus.primary.contact": "Contact",
-    "menus.primary.order": "Pre-order NOW",
+    "menus.primary.order": "Order NOW",
     "tab item in game contents section": {
         "board": "Game board"
     },
     "newsletter.description": "Subscribe to the newsletter to follow the ins and outs of the game and to stay updated about the progress of the production and distribution of the 2nd edition!",
-    "buy_button": "Pre-order now!",
+    "buy_button": "Order now!",
     "game_contents.description": "The game is made up of:\n\nbank vaults (to keep your belongings secret and create an element of surprise), money coins, credit pieces, goods & markets, cards with investment opportunities, \"chance\" cards, regular and special dice, the game board, international manual & lore book.\n\nPlayer's banks have a limited supply of money at their disposal and an unlimited amount of credit. The game contains two \"markets\" filled with wooden blocks. One for consumption goods (green) and one for production goods (red).",
-    "intro.description2": "Money Maker is a combination of Catan, Monopoly and Poker. As opposed to Monopoly, in Money Maker every player is a bank!  \n\nThe goal of the game is to end up as the richest bank, meaning the bank with the most money, or the one that is least indebted! Will your investments grow the economy? Or will the next financial crisis start at your bank?",
+    "intro.description2": "Money Maker is a combination of Catan, Monopoly and Poker. As opposed to Monopoly, in Money Maker every player is a commercial bank!he goal of the game is to end up as the richest bank, meaning the bank with the most money, or the one least indebted.",
     "game_mechanics.header": "How the game works",
     "game_mechanics.intro": "Every player is a commercial bank. It is your goal to end up as the richest bank of Amsterdam. You do this by earning as much money as you can. Luckily, you have an endless supply of credit to invest!",
     "game_mechanics.description": "The game works like this:",
@@ -54,8 +54,8 @@
     "game_mechanics.step4": "Sell the goods to the markets, earn money, and hopefully make a profit!",
     "game_impressions.header": "Game impressions",
     "game_impressions.description": "The board represents the city of Amsterdam with its canals. The city visualizes the flow of credit through an economy as well as functions as a playful balance sheet. The canal blocks of house represent credit ratings from the outside in. Every player starts in the outer ring. When banks successfully pay off their credit, they may upgrade to higher credit rating levels where they can take larger risks!",
-    "buying.header": "Get Money Maker!",
-    "landing.intro": "The game where YOU make the money!",
+    "buying.header": "Get Money Maker now!",
+    "landing.intro": "Let's play with the money system",
     "menus.secondary.business": "Workshops",
     "menus.secondary.about": "About us",
     "menus.secondary.blog": "Blog",
@@ -65,5 +65,21 @@
     "game_impressions.thumb_headers.setup": "Game set up",
     "game_impressions.thumb_headers.perspective": "Player perspective",
     "meta.page-home.title": "Money Maker - Play the Bank",
-    "meta.page-home.description": "Money Maker is the only board game where YOU create the money! Every player is a commercial bank. Use your infinite supply of credit to invest, produce goods, and earn money. Be careful not to create the next financial crisis!"
+    "meta.page-home.description": "Money Maker is the only board game where YOU create the money! Every player is a commercial bank. Use your infinite supply of credit to invest, produce goods, and earn money. Be careful not to create the next financial crisis!",
+    "landing": {
+        "landing.cta": "Want to understand the Financial Crisis? Play Money Maker!"
+    },
+    "intro.description3": "Players from 11 years and up have enjoyed this game. Afterwards, 85% of players understand the difference between money, credit, debt, basic economics and have a context in which to place societal affairs.",
+    "testimonials.header": "People loved creating money",
+    "testimonials.1.quote": "It's **one of the best games me and my friends have ever played**. You guys re-created \"Settlers of Catan\" but with a more sophisticated mechanism and dedicated explanation of our monetary system.",
+    "testimonials.1.person.name": "Philip (35)",
+    "testimonials.1.person.occupation": "Financial activist",
+    "testimonials.2.quote": "Playing the game was an entirely new experience to me. I find the monetary system confusing and cluttered. The game gave me an insight in the mechanics of the monetary system in a fun and joyful way.",
+    "testimonials.2.person.name": "Claire (33)",
+    "testimonials.2.person.occupation": "IT specialist",
+    "testimonials.3.quote": "Through this game **I finally understood that the system I live in is just a game** and the ones brave enough to gamble, will be the ones that win... After playing I see through the banking system.",
+    "testimonials.3.person.name": "Helene (27)",
+    "testimonials.3.person.occupation": "Actress",
+    "manuals.header": "Manuals",
+    "manuals.description": "There are two manuals: The Beginner's game version and the full version. You can download them from here in the four languages: Danish, Dutch, English and German "
 }
