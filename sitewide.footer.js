@@ -1,5 +1,9 @@
 const langFiles = {};
-const mdparser = new showdown.Converter();
+const mdparser = new showdown.Converter({
+  simplifiedAutoLink: true,
+  simpleLineBreaks: true,
+  openLinksInNewWindow: true
+});
 
 for (const key of MM_I18N_LANGUAGES) {
   langFiles[key] = "https://cdn.jsdelivr.net/gh/onsgeld/moneymaker@" + MM_I18N_RELEASE_TAG + "/" + key + ".json";
