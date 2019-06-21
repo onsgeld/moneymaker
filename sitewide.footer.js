@@ -1,4 +1,5 @@
 const langFiles = {};
+const mdparser = new showdown.Converter();
 
 for (const key of MM_I18N_LANGUAGES) {
   langFiles[key] = "https://cdn.jsdelivr.net/gh/onsgeld/moneymaker@" + MM_I18N_RELEASE_TAG + "/" + key + ".json";
@@ -82,16 +83,17 @@ function isStringI18nKey(string) {
 // translate a single node
 function translateTag(nodeSelector, i18nKey, targetAttr, args) {
   var translated = $.i18n.apply(null, [i18nKey].concat(args || []));
+  var mdparsed = mdparser.makeHtml(translated)
   if (translated !== i18nKey) {
     var node = $(nodeSelector);
     if (node.prop("tagName") == "META" && !targetAttr) {
       targetAttr = 'content';
     }
     if (!targetAttr || targetAttr == 'html') {
-      node.html(translated);
+      node.html(mdparsed);
     }
     else {
-      node.attr(targetAttr, translated);
+      node.attr(targetAttr, mdparsed);
     }
   }
   else {
