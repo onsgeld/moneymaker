@@ -1,15 +1,7 @@
 const langFiles = {};
 
-if (MM_DEVELOPMENT) {
-  langBaseUrl = 'https://cdn.jsdelivr.net/gh/onsgeld/moneymaker/'
-}
-
-else {
-  langBaseUrl = "https://cdn.jsdelivr.net/gh/onsgeld/moneymaker@" + MM_I18N_RELEASE_TAG + "/"
-}
-
 for (const key of MM_I18N_LANGUAGES) {
-  langFiles[key] = langBaseUrl + key + ".json";
+  langFiles[key] = "https://cdn.jsdelivr.net/gh/onsgeld/moneymaker@" + MM_I18N_RELEASE_TAG + "/" + key + ".json";
 }
 
 // since Webflow doesnt provide internationalised meta tags yet,
