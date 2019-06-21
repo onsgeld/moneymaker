@@ -1,9 +1,14 @@
 const langFiles = {};
-const mdparser = new showdown.Converter({
-  simplifiedAutoLink: true,
-  simpleLineBreaks: true,
-  openLinksInNewWindow: true
-});
+
+// TODO: replace with https://github.com/markdown-it/markdown-it
+// and merge multiple text boxes with single markdown <p>
+// const mdparser = new showdown.Converter({
+//   simplifiedAutoLink: true,
+//   simpleLineBreaks: true,
+//   openLinksInNewWindow: true
+// });
+
+const mdparser = window.markdownit();
 
 for (const key of MM_I18N_LANGUAGES) {
   langFiles[key] = "https://cdn.jsdelivr.net/gh/onsgeld/moneymaker@" + MM_I18N_RELEASE_TAG + "/" + key + ".json";
@@ -93,7 +98,7 @@ function translateTag(nodeSelector, i18nKey, targetAttr, args) {
       targetAttr = 'content';
     }
     if (!targetAttr || targetAttr == 'html') {
-      node.html(mdparser.makeHtml(translated));
+      node.html(mdparser.renderInline(translated));
     }
     else {
       node.attr(targetAttr, translated);
