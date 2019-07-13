@@ -20,6 +20,7 @@ function prepareMetaI18n() {
   var page_path = window.location.pathname.substring(1) || 'home';
   var title_path = "meta.page-" + page_path + ".title";
   var description_path = "meta.page-" + page_path + ".description";
+  
   prepareMetaTags({
     "head title":                           title_path,
     "head meta[property='og:title']":       title_path,
