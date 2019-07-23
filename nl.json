@@ -47,7 +47,7 @@
     "game_mechanics.header": "Hoe Money Maker werkt",
     "game_mechanics.intro": "Iedere speler is een commerciële bank. Het is jouw taak om te eindigen als de rijkste bank van Amsterdam! Verdien zo veel mogelijk geld. Gelukkig heb je oneindig krediet om interessante bedrijven mee te kopen!",
     "game_mechanics.description": "Het spelverloop is als volgt:",
-    "game_mechanics.outro": "Maar wees voorzichtig! Hoe meer krediet de economie inkomt, des te erger wordt de inflatie en zullen de prijzen schommelen! Je plannen kunnen zomaar gedwarsboomd worden...",
+    "game_mechanics.outro": "Maar wees voorzichtig! Hoe meer krediet de economie inkomt, des te erger wordt de inflatie en zullen de prijzen schommelen! Misschien krijg je niet de winst die je verwacht en veroorzaak je een financiële crisis...",
     "game_mechanics.step1": "Bied op tegen je vrienden om waardevolle bedrijven te verkrijgen.",
     "game_mechanics.step2": "De hoogste bieder mag in het bedrijf investeren met diens krediet.",
     "game_mechanics.step3": "Maak goederen met de bedrijven waar je in hebt geïnvesteerd.",
@@ -77,14 +77,16 @@
     "testimonials.2.quote": "Dit spel was **een absoluut nieuwe ervaring** voor me. Banken zijn een moeilijk onderwerp, maar het spel heeft me met plezier en lol geleerd wat ondanks twee jaar Economielessen nooit duidelijk is geweest.",
     "testimonials.2.person.name": "Cecilia (27)",
     "testimonials.2.person.occupation": "Chemicus",
-    "testimonials.3.quote": "Door het spel heb ik eindelijk ingezien dat het systeem waarin we leven slechts een spel is. Allee degenen die het meest durven te gokken kunnen winnen...",
+    "testimonials.3.quote": "Door het spel heb ik eindelijk ingezien dat **het systeem waarin we leven slechts een spel is**. Alleen degenen die het meest durven te gokken kunnen winnen...",
     "testimonials.3.person.name": "Helene (27)",
     "testimonials.3.person.occupation": "Lerares",
     "manuals.header": "Handleidingen",
     "manuals.description": "Er zijn twéé typen handleidingen. Een Beginnersvariant en de Volledige versie. Ze zijn beschikbaar in het Nederlands, Engels, Duits en Deens.",
     "intro.description2b": "Doel van het spel: eindig met het meeste geld of de minste schuld, door middel van eindeloos krediet.",
-    "video-testimonials.header": "Money Maker schijnt licht op een maatschappelijke onderwerp van belang.",
+    "video-testimonials.header": "Money Maker schijnt licht op een maatschappelijk onderwerp van belang.",
     "video-testimonials.header1": "Wat de grootste geld-hervormingsbeweging zegt over Money Maker",
     "video-testimonials.header2": "Wat het spelen van Money Maker je leert over het financieel systeem",
-    "video-testimonials.header3": "Hoe je met Money Maker de aard van financiële crises kan begrijpen"
+    "video-testimonials.header3": "Hoe je met Money Maker de aard van financiële crises kan begrijpen",
+    "game_impressions.description.a": "Het spelbord vertegenwoordigt de grachten van Amsterdam. De stad laat zien waar het bankkrediet heengaat. ",
+    "game_impressions.description.b": "De grachten, van buiten naar binnen, zijn de verschillende kredietwaardigheidsniveau's. Iedere speler begint in de buitenste ring. Wanneer je succesvol je beloftes inlost ga je dichter naar het centrum en kan je meer risico nemen!"
 }
