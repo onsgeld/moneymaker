@@ -66,9 +66,7 @@
     "game_impressions.thumb_headers.perspective": "Player perspective",
     "meta.page-home.title": "Money Maker - Play the Bank",
     "meta.page-home.description": "Money Maker is the only board game where YOU create the money! Every player is a commercial bank. Use your infinite supply of credit to invest, produce goods, and earn money. Be careful not to create the next financial crisis!",
-    "landing": {
-        "landing.cta": "Want to understand the Financial Crisis? Play Money Maker!"
-    },
+    "landing.cta": "Want to understand the Financial Crisis? Play Money Maker!",
     "intro.description3": "Players from 11 years and up enjoyed Money Maker. Afterwards, 85% of players understand money, credit, debt, basic economics and have a context in which to place societal affairs.",
     "testimonials.header": "People who loved creating money",
     "testimonials.1.quote": "It's **one of the best games me and my friends have ever played**. You guys re-created \"Settlers of Catan\" but with a more sophisticated mechanism and dedicated explanation of our monetary system.",
@@ -86,5 +84,7 @@
     "video-testimonials.header": "Money Maker explains hidden societal fundamentals",
     "video-testimonials.header1": "What the largest Dutch monetary reform movement says about Money Maker",
     "video-testimonials.header2": "What playing Money Maker teaches you about the financial system",
-    "video-testimonials.header3": "What Money Maker shows you about a financial crisis"
+    "video-testimonials.header3": "What Money Maker shows you about a financial crisis",
+    "game_impressions.description.a": "The board represents the city of Amsterdam with its canals. The city visualizes the flow of credit through an economy as well as functions as a playful balance sheet. ",
+    "game_impressions.description.b": "The canals from the outside in represent credit ratings. Every player starts in the outer ring. When banks successfully pay off their credit, they may upgrade to higher credit rating levels where they can take larger risks!"
 }
