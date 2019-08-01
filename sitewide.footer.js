@@ -1,13 +1,5 @@
 const langFiles = {};
 
-// TODO: replace with https://github.com/markdown-it/markdown-it
-// and merge multiple text boxes with single markdown <p>
-// const mdparser = new showdown.Converter({
-//   simplifiedAutoLink: true,
-//   simpleLineBreaks: true,
-//   openLinksInNewWindow: true
-// });
-
 const mdparser = window.markdownit();
 
 for (const key of MM_I18N_LANGUAGES) {
@@ -20,7 +12,7 @@ function prepareMetaI18n() {
   var page_path = window.location.pathname.substring(1) || 'home';
   var title_path = "meta.page-" + page_path + ".title";
   var description_path = "meta.page-" + page_path + ".description";
-  
+
   prepareMetaTags({
     "head title":                           title_path,
     "head meta[property='og:title']":       title_path,
@@ -285,11 +277,11 @@ function initShopify() {
                 },*/
 
                 // only fires after loading original popup
-                "DOMEvents": {
-                  'click button.shopify-buy__btn--cart-checkout': function (evt, target) {
-                    window.location.href = "http://shop.moneymaker.games/cart";
-                  }
-                },
+                // "DOMEvents": {
+                //   'click button.shopify-buy__btn--cart-checkout': function (evt, target) {
+                //     window.location.href = "http://shop.moneymaker.games/cart";
+                //   }
+                // },
 
                 "templates": {
                   footer: `{{^data.isEmpty}}
