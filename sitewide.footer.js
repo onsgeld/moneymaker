@@ -49,8 +49,12 @@ function parseI18n(callback) {
         $.i18n().locale = navigator.language;
       }
       callback.call();
-    });
-  }
+    })
+    .fail(function() {
+      console.warn( "failed to load IP data for auto-selecting language" );
+      $.i18n().locale = navigator.language;
+      callback.call();
+    })
 };
 
 function getLocale2() {
