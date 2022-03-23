@@ -55,6 +55,7 @@ function parseI18n(callback) {
       $.i18n().locale = navigator.language;
       callback.call();
     })
+  }
 };
 
 function getLocale2() {
