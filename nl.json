@@ -1,5 +1,5 @@
 {
-    "landing.description": "Money Maker is een spannend bordspel over geldschepping, schuld en krediet in de setting van het Amsterdam uit de Gouden Eeuw.",
+    "landing.description": "Money Maker is een spannend bordspel over geldschepping, schuld en krediet dat speelt in de Gouden Eeuw van Amsterdam.",
     "landing.order_button": "Koop Nu ($1€)",
     "intro.header": "Waar gaat Money Maker over?",
     "intro.description1": "Money Maker is een uniek spel vol wonder dat je laat zien hoe het geldsysteem werkt en ons gedrag beïnvloedt. Het zit vol lol en serieuze zaken. De setting is het 17e-eeuwse Amsterdam in de Gouden Eeuw. Je speelt een bank in de stad en het is jouw taak de rijkste te worden! Strooi met je krediet en investeer in winstgevende mogelijkheden. Zal jouw investering de economie doen groeien? Of veroorzaak jij de volgende financiële crisis?",
@@ -55,7 +55,7 @@
     "game_impressions.header": "Spelimpressies",
     "game_impressions.description": "Het spelbord vertegenwoordigt de grachten van Amsterdam. De stad laat zien waar het bankkrediet heengaat. De grachten, van buiten naar binnen, zijn de verschillende kredietwaardigheidsniveau's. Iedere speler begint in de buitenste ring. Wanneer je succesvol je beloftes inlost ga je dichter naar het centrum en kan je meer risico nemen!",
     "buying.header": "Haal Money Maker in huis!",
-    "landing.intro": "Speel met het geldsysteem",
+    "landing.intro": "Ontdek jij het geheim van de goudsmid?",
     "menus.secondary.business": "Workshops",
     "menus.secondary.about": "Over ons",
     "menus.secondary.blog": "Blog",
@@ -86,5 +86,14 @@
     "video-testimonials.header2": "Wat het spelen van Money Maker je leert over het financieel systeem",
     "video-testimonials.header3": "Hoe je met Money Maker de aard van financiële crises kan begrijpen",
     "game_impressions.description.a": "Het spelbord vertegenwoordigt de grachten van Amsterdam. De stad laat zien waar het bankkrediet heengaat. ",
-    "game_impressions.description.b": "De grachten, van buiten naar binnen, zijn de verschillende kredietwaardigheidsniveau's. Iedere speler begint in de buitenste ring. Wanneer je succesvol je beloftes inlost ga je dichter naar het centrum en kan je meer risico nemen!"
+    "game_impressions.description.b": "De grachten, van buiten naar binnen, zijn de verschillende kredietwaardigheidsniveau's. Iedere speler begint in de buitenste ring. Wanneer je succesvol je beloftes inlost ga je dichter naar het centrum en kan je meer risico nemen!",
+    "tagline of the game": {
+        "landing.tagline": "Ontdek jij het geheim van de goudsmid?"
+    },
+    "Coming soon to a crowdfunding platform near you": {
+        "landing.coming-soon": "Binnenkort op een crowdfunding platform bij jou in de buurt!"
+    },
+    "let me know when button": {
+        "subscribe-button": "Geef me een seintje"
+    }
 }
