@@ -94,6 +94,7 @@
         "landing.coming-soon": "Binnenkort op een crowdfunding platform bij jou in de buurt!"
     },
     "let me know when button": {
-        "subscribe-button": "Geef me een seintje"
-    }
+        "button.subscribe": "Houd me op de hoogte!"
+    },
+    "button.let-me-know-when": "Laat me weten wanneer!"
 }
