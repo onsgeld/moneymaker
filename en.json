@@ -86,5 +86,14 @@
     "video-testimonials.header2": "What playing Money Maker teaches you about the financial system",
     "video-testimonials.header3": "What Money Maker shows you about a financial crisis",
     "game_impressions.description.a": "The board represents the city of Amsterdam with its canals. The city visualizes the flow of credit through an economy as well as functions as a playful balance sheet. ",
-    "game_impressions.description.b": "The canals from the outside in represent credit ratings. Every player starts in the outer ring. When banks successfully pay off their credit, they may upgrade to higher credit rating levels where they can take larger risks!"
+    "game_impressions.description.b": "The canals from the outside in represent credit ratings. Every player starts in the outer ring. When banks successfully pay off their credit, they may upgrade to higher credit rating levels where they can take larger risks!",
+    "tagline of the game": {
+        "landing.tagline": "Will you find out\nthe Secret of the Goldsmith?"
+    },
+    "Coming soon to a crowdfunding platform near you": {
+        "landing.coming-soon": "Coming Soon to a crowdfunding platform near you..."
+    },
+    "let me know when button": {
+        "subscribe-button": "Tell me when!"
+    }
 }
