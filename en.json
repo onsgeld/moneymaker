@@ -96,5 +96,8 @@
     "let me know when button": {
         "button.subscribe": "Keep me updated!"
     },
-    "button.let-me-know-when": "Let me know when!"
+    "button.let-me-know-when": "Let me know when!",
+    "Money Maker has sold out all available copies! If you want to receive a notification when the game is available for order again, tell us where to send our notification email to.": {
+        "game_mechanics.stock-notice": "Money Maker has sold out all available copies! If you want to receive a notification when the game is available for order again, tell us where to send our notification email to."
+    }
 }
